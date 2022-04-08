@@ -3,7 +3,7 @@ import React from 'react'
 function TodoItem({item}) {
   return (
     <div>
-        <h3>{item}</h3>
+        <h3 className="List_items">{item}</h3>
     </div>
   )
 }
