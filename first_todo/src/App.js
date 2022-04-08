@@ -9,27 +9,27 @@ function App() {
   const handleLogin =()=>{
     setisAuth(true)
   }
-  // if(!isAuth) {
-  //   return (
-  //     <div> User is not logged In <button onClick={handleLogin}>LogIn</button></div>
-  //   )
-  // }
-  // return !isAuth ? (
-  //       <div> User is not logged In <button onClick={handleLogin}>LogIn</button></div>
-  //     ): (
-  //   <div className="App">
-  //  ToDo
+  if(!isAuth) {
+    return (
+      <div> User is not logged In <button onClick={handleLogin}>LogIn</button></div>
+    )
+  }
+  return !isAuth ? (
+        <div> User is not logged In <button onClick={handleLogin}>LogIn</button></div>
+      ): (
+    <div className="App">
+   ToDo
 
-  //  <TOdo/>
-  //  <Form/>
-  //   </div>
-  // );
- return (
-<div>
-  <Standup/>
-</div>
+   <TOdo/>
+   {/* <Form/> */}
+    </div>
+  );
+//  return (
+// <div>
+//   <Standup/>
+// </div>
  
- )
+//  )
 }
 
 export default App;

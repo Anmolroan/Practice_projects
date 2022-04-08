@@ -1,10 +1,16 @@
 import React from 'react'
 
 function TodoItem({title,id,status,handleDelete}) {
-    console.log(title,status,id);
+    const [stat,showstatus] =React.useState(status);
+    const handleToggle=() => {
+      stat==="false"?showstatus("true"):showstatus("false")
+   
+      
+    }
   return (
     <div>
-        <h3 className="List_items">{title} <button onClick={()=>handleDelete(id)}>Delete</button></h3>
+        <h3 className="List_items">{title} <button onClick={handleToggle}>{stat}</button></h3>
+        <button onClick={()=>handleDelete(id)}>Delete</button>
     </div>
   )
 }
