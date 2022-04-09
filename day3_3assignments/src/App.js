@@ -1,11 +1,13 @@
 
 import './App.css';
-import data from "./db.json";
+import Form from './components/Form';
+
 function App() {
-  console.log(data)
+
   return (
     <div className="App">
      <h1>coupons</h1>
+     <Form/>
     </div>
   );
 }

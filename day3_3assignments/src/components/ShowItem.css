@@ -1,0 +1,13 @@
+.showitemContainer{
+    background:rgb(170, 163, 163);
+    width: 300px;
+    border: solid 1px ;
+   
+margin-top:10px;
+   
+}
+.list_container{
+    background:blue;
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
