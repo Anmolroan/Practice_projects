@@ -1,13 +1,13 @@
 
 import './App.css';
 import Form from './components/Form';
-
+import Navbar from './components/Navbar.jsx'
 function App() {
 
   return (
     <div className="App">
-     <h1>coupons</h1>
-     <Form/>
+     <Navbar />
+    
     </div>
   );
 }
