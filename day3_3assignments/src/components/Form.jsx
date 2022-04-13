@@ -1,13 +1,13 @@
 import React from 'react'
-import List from './List'
-import data from "../db.json";
+
 function Form() {
   const [form,setForm] =React.useState({});
-  const [list,setList] =React.useState(data)
+
+  
   const handleSubmit=(e)=>{
     e.preventDefault();
     
-    setList([...list,form]);
+
 }
   const handleChange=(e) => {
 const {name,value} = e.target;
@@ -90,9 +90,7 @@ setForm({...form,[name]:value});
         
       </form>
       </div>
-      <div className="list_container">
-    <List list={list}/>
-    </div>
+      
     </div>
   )
 }

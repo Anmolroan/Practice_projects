@@ -1,13 +1,22 @@
 import React from 'react'
 import ShowItem from "./ShowItem";
-import "./ShowItem.css"
-function List({list}) {
-  
+
+import {useState ,useEffect} from 'react';
+import data from "../db.json";
+function List() {
+  const [list,setList]=useState(data.data);
+ 
+  console.log(data)
   return (
-    list.map((item)=>{
+    <div className="list-container">
+
+   
+   { list.map((item)=>{
      
      return <div><ShowItem key ={item.Restarunt_name} item={item}/></div>
-    }))
+    })}
+    </div>
+    )
    
   
 }

@@ -1,10 +1,10 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 function Navbar() {
   return (
     <div>
-        <NavLink to='/form'>Form</NavLink>
-        <NavLink to='/home'>Home</NavLink>
+        <Link to='form'>Form</Link>
+        <Link to=''>Home</Link>
         
     </div>
   )
