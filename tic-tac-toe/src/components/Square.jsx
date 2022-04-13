@@ -1,25 +1,25 @@
 import React from 'react'
 import "./Square.css"
 function Square({state,changeState}) {
- 
-    const [value,setValue] =React.useState(null);
+ console.log( )
+    const [value,setValue] =React.useState(Array(9).fill(0));
     
-    const changeValue =()=>{
-        changeState();
-        if(state){
-            setValue("O")
+    // const changeValue =()=>{
+    //     changeState();
+    //     if(state){
+    //         setValue("O")
         
-        }else {
-            setValue("X");
+    //     }else {
+    //         setValue("X");
          
-        }
-        console.log(state)
-    }
+    //     }
+    //     console.log(state)
+    // }
    
   return (
     <div>
     
-    <div className="squares" onClick={changeValue} >{value}</div>
+    <div className="squares"  >{value}</div>
        
     </div>
   )

@@ -3,28 +3,27 @@ import Square from './Square'
 import "./Grid.css"
 function Grid() {
   const [state,setState] =React.useState(false);
-  const [count,setCount] = React.useState(0);
-  const handleInc =()=>{
-    setCount(count+1);
-    return count;
-  }
+  const [value,setValue] =React.useState() ;
+  const [arr,setArr] =React.useState(Array(9).fill(0));
+  
   const changeState = ()=>{
-    setState(!state)
+    setState(!state);
+    if(state){
+      setValue("X")
+    }else{
+      setValue("O")
+    }
   }
   
   
   return (
     <div className="grid">
     {
+     arr.map((e)=>{
+      
      
-      [1,2,3].map(()=>{
-        return [1,2,3].map(()=>{
-         
-           return ( <Square state={state} changeState={changeState} />
-           
-           )
-        })
-    })
+     })
+     
     
     }
     </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import "./ShowItem.css";
 function ShowItem({item}) {
-    console.log(item)
+    
   return (
     <div className="showitemContainer" >
 
