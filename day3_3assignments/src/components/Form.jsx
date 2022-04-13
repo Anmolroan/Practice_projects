@@ -1,13 +1,20 @@
 import React from 'react'
-
+import {useState ,useEffect} from 'react';
 function Form() {
-  const [form,setForm] =React.useState({});
+  const [form,setForm] =useState({});
+  // useEffect(()=>{
 
-  
-  const handleSubmit=(e)=>{
-    e.preventDefault();
-    
+  //       },[]);
 
+
+const getdata =()=>{
+  fetch ("http://localhost:8000/data",{
+    method:"POST",
+    body:JSON.stringify(form),
+    headers:{
+        "content-type": "application/json"
+    }
+})
 }
   const handleChange=(e) => {
 const {name,value} = e.target;
@@ -21,7 +28,7 @@ setForm({...form,[name]:value});
 
     <div className="form_container"> 
     
-      <form onSubmit={handleSubmit}>
+      <div >
         <input type="Number" 
         placeholder="Id" 
         name = "id" 
@@ -84,11 +91,11 @@ setForm({...form,[name]:value});
        
         onChange={handleChange}/>
          <br/>
-<input type="submit" value="Submit" />
+<button onClick={()=>getdata()}>Submit</button>
 
         
         
-      </form>
+      </div>
       </div>
       
     </div>
