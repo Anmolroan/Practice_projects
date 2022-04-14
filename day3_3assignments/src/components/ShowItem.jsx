@@ -6,6 +6,7 @@ function ShowItem({item}) {
     <div className="showitemContainer" >
 
     <h4>{item.id}</h4>
+    <h4>{item.cost_for_two}</h4>
     <h4>{item.Restarunt_name}</h4>
     <span>{item.dishes_name}</span>
     <h5>{item.rating}</h5>

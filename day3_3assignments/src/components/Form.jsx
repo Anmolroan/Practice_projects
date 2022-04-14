@@ -34,6 +34,11 @@ setForm({...form,[name]:value});
         name = "id" 
        
         onChange={handleChange}/>
+        <input type="Number" 
+        placeholder="cost_for_two" 
+        name = "cost_for_two" 
+       
+        onChange={handleChange}/>
         <br/>
 
        <input type="text" 
