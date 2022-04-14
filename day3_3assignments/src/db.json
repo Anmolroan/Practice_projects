@@ -9,7 +9,7 @@
       "votes": 15,
       "Min_limit_of_order": 137,
       "min_time_to_cook": 58,
-      "payment_methods": "Rand",
+      "payment_methods": "Card",
       "image": "http://dummyimage.com/155x100.png/cc0000/ffffff"
     },
     {
@@ -21,7 +21,7 @@
       "votes": 45,
       "Min_limit_of_order": 149,
       "min_time_to_cook": 58,
-      "payment_methods": "Peso",
+      "payment_methods": "Card",
       "image": "http://dummyimage.com/135x100.png/5fa2dd/ffffff"
     },
     {
@@ -33,7 +33,7 @@
       "votes": 220,
       "Min_limit_of_order": 326,
       "min_time_to_cook": 34,
-      "payment_methods": "Gourde",
+      "payment_methods": "Card",
       "image": "http://dummyimage.com/111x100.png/dddddd/000000"
     },
     {
@@ -45,7 +45,7 @@
       "votes": 806,
       "Min_limit_of_order": 362,
       "min_time_to_cook": 54,
-      "payment_methods": "Zloty",
+      "payment_methods": "Card",
       "image": "http://dummyimage.com/128x100.png/cc0000/ffffff"
     },
     {
@@ -57,7 +57,7 @@
       "votes": 573,
       "Min_limit_of_order": 101,
       "min_time_to_cook": 43,
-      "payment_methods": "Ruble",
+      "payment_methods": "Card",
       "image": "http://dummyimage.com/137x100.png/dddddd/000000"
     },
     {
@@ -69,7 +69,7 @@
       "votes": 508,
       "Min_limit_of_order": 184,
       "min_time_to_cook": 45,
-      "payment_methods": "Zloty",
+      "payment_methods": "Card",
       "image": "http://dummyimage.com/237x100.png/ff4444/ffffff"
     },
     {
@@ -81,7 +81,7 @@
       "votes": 521,
       "Min_limit_of_order": 95,
       "min_time_to_cook": 49,
-      "payment_methods": "Dollar",
+      "payment_methods": "Card",
       "image": "http://dummyimage.com/136x100.png/cc0000/ffffff"
     },
     {
@@ -93,7 +93,7 @@
       "votes": 10,
       "Min_limit_of_order": 69,
       "min_time_to_cook": 57,
-      "payment_methods": "Peso",
+      "payment_methods": "Cash",
       "image": "http://dummyimage.com/194x100.png/dddddd/000000"
     },
     {
@@ -105,7 +105,7 @@
       "votes": 453,
       "Min_limit_of_order": 203,
       "min_time_to_cook": 31,
-      "payment_methods": "Yuan Renminbi",
+      "payment_methods": "Cash",
       "image": "http://dummyimage.com/109x100.png/5fa2dd/ffffff"
     },
     {
@@ -117,7 +117,7 @@
       "votes": 35,
       "Min_limit_of_order": 318,
       "min_time_to_cook": 39,
-      "payment_methods": "Peso",
+      "payment_methods": "Cash",
       "image": "http://dummyimage.com/224x100.png/cc0000/ffffff"
     },
     {
@@ -129,7 +129,7 @@
       "votes": 704,
       "Min_limit_of_order": 278,
       "min_time_to_cook": 43,
-      "payment_methods": "Rupee",
+      "payment_methods": "Cash",
       "image": "http://dummyimage.com/227x100.png/ff4444/ffffff"
     },
     {
@@ -141,7 +141,7 @@
       "votes": 684,
       "Min_limit_of_order": 151,
       "min_time_to_cook": 50,
-      "payment_methods": "Rupiah",
+      "payment_methods": "Cash",
       "image": "http://dummyimage.com/129x100.png/cc0000/ffffff"
     },
     {
@@ -153,7 +153,7 @@
       "votes": 99,
       "Min_limit_of_order": 80,
       "min_time_to_cook": 60,
-      "payment_methods": "Yuan Renminbi",
+      "payment_methods": "Cash",
       "image": "http://dummyimage.com/107x100.png/dddddd/000000"
     },
     {
@@ -165,7 +165,7 @@
       "votes": 448,
       "Min_limit_of_order": 362,
       "min_time_to_cook": 47,
-      "payment_methods": "Euro",
+      "payment_methods": "Cash",
       "image": "http://dummyimage.com/242x100.png/cc0000/ffffff"
     },
     {
@@ -177,7 +177,7 @@
       "votes": 558,
       "Min_limit_of_order": 79,
       "min_time_to_cook": 44,
-      "payment_methods": "Rupiah",
+      "payment_methods": "Cash",
       "image": "http://dummyimage.com/173x100.png/cc0000/ffffff"
     },
     {
@@ -189,7 +189,7 @@
       "votes": 595,
       "Min_limit_of_order": 116,
       "min_time_to_cook": 47,
-      "payment_methods": "Denar",
+      "payment_methods": "Cash",
       "image": "http://dummyimage.com/170x100.png/cc0000/ffffff"
     },
     {
@@ -201,7 +201,7 @@
       "votes": 885,
       "Min_limit_of_order": 200,
       "min_time_to_cook": 60,
-      "payment_methods": "Euro",
+      "payment_methods": "Cash",
       "image": "http://dummyimage.com/247x100.png/cc0000/ffffff"
     },
     {
@@ -213,7 +213,7 @@
       "votes": 639,
       "Min_limit_of_order": 347,
       "min_time_to_cook": 52,
-      "payment_methods": "Ruble",
+      "payment_methods": "Cash",
       "image": "http://dummyimage.com/204x100.png/5fa2dd/ffffff"
     },
     {
@@ -225,7 +225,7 @@
       "votes": 597,
       "Min_limit_of_order": 385,
       "min_time_to_cook": 48,
-      "payment_methods": "Euro",
+      "payment_methods": "Cash",
       "image": "http://dummyimage.com/208x100.png/cc0000/ffffff"
     },
     {
@@ -237,7 +237,7 @@
       "votes": 970,
       "Min_limit_of_order": 386,
       "min_time_to_cook": 57,
-      "payment_methods": "Ruble",
+      "payment_methods": "Cash",
       "image": "http://dummyimage.com/231x100.png/cc0000/ffffff"
     },
     {
@@ -249,7 +249,7 @@
       "votes": "444",
       "Min_limit_of order": "444",
       "min_time_to cookr": "44",
-      "payment_methods": "ddf",
+      "payment_methods": "Cash",
       "image": "https://media.gettyimages.com/photos/celebrities-posing-for-paparazzi-on-red-carpet-picture-id130406997?k=20&m=130406997&s=612x612&w=0&h=LH6BxG26gMM1y44USbbi_OIVH1n-EWG6taiRsJ-t2gg="
     }
   ]
