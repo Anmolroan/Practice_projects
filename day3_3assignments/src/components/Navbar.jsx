@@ -3,10 +3,10 @@ import {Link} from 'react-router-dom';
 
 function Navbar() {
   return (
-    <div>
+    <div className="navbar ">
         <Link to='form'>Form</Link>
         <Link to=''>Home</Link>
-      
+     
     </div>
   )
 }

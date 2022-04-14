@@ -8,7 +8,7 @@ function Form() {
 
 
 const getdata =()=>{
-  fetch ("http://localhost:8000/data",{
+  fetch ("http://localhost:3004/data",{
     method:"POST",
     body:JSON.stringify(form),
     headers:{
@@ -34,6 +34,7 @@ setForm({...form,[name]:value});
         name = "id" 
        
         onChange={handleChange}/>
+        <br/>
         <input type="Number" 
         placeholder="cost_for_two" 
         name = "cost_for_two" 
@@ -96,7 +97,7 @@ setForm({...form,[name]:value});
        
         onChange={handleChange}/>
          <br/>
-<button onClick={()=>getdata()}>Submit</button>
+<button onClick={()=>getdata()} className="submit">Submit</button>
 
         
         
