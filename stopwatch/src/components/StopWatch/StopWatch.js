@@ -8,56 +8,65 @@ function StopWatch() {
   const [seconds,setSeconds]= useState(0);
   const [flag,setFlag]=useState(false);
   useEffect(()=>{
-    const interval=setInterval(()=>{
+    if(flag){
+      const interval=setInterval(()=>{
        
-      setMiliSeconds((p)=>{
-            if(p===100){
-              
-              setSeconds((m)=>{
-                if(m===60){
-                  
-                  setMinutes((h)=>{
-                    if(h===60){
-                      setHour((sh)=>{
-                        return sh+1;
-                      })
-                    }
-                    return h+1;
-                  })
-                  setSeconds(0);
-                }
-                return m+1
-              })
-              setMiliSeconds(0)
-            }else{
-              return (p+1);
-            }
+        setMiliSeconds((p)=>{
+              if(p===100){
                 
-               
-           
-        })
-    },10)
-    return ()=>{
-        clearInterval(interval)
+                setSeconds((m)=>{
+                  if(m===60){
+                    
+                    setMinutes((h)=>{
+                      if(h===60){
+                        setHour((sh)=>{
+                          return sh+1;
+                        })
+                      }
+                      return h+1;
+                    })
+                    setSeconds(0);
+                  }
+                  return m+1
+                })
+                setMiliSeconds(0)
+              }else{
+                return (p+1);
+              }
+                  
+                 
+             
+          })
+      },10)
+      return ()=>{
+          clearInterval(interval)
+      }
     }
-        },[])
+   
+        },[flag])
   
   return (
     <div>
     <StopTime>
     <div>
-<span>{hour}</span>
-<span>{minute}</span>
-<span>{seconds}</span>
+<span>{hour}h</span>
+<span>{minute}m</span>
+<span>{seconds}s</span>
 <span>{miliseconds}</span>
 <div>
-<button> RESET</button>
+{!flag ? <button onClick={()=>setFlag(true)}> Start</button>
+:
+<button onClick={()=>setFlag(false)}> Stop</button>
+}
+
+
 <button  onClick ={()=>{
+  setFlag(false)
   setMinutes(0);
   setMiliSeconds(0);
   setHour(0);
   setSeconds(0);
-}}>Start</button>
+}}>RESET</button>
 </div>
     </div>
     </StopTime>
