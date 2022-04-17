@@ -19,16 +19,11 @@ function Timer() {
     
     {
       set ?  <div>
-      check
-      {
-        inputMin.current!==null ?
-          console.log(inputMin.current.value):console.log("123")
-        
-      }
+     
       
-{/* <span>{inputHour.current.value}</span>
-<span>{inputMin.current.value}</span>
-<span>{inputSec.current.value}</span> */}
+<span>{inputHour.current!==null?inputHour.current.value :"00"}</span>
+<span>{inputMin.current!==null?inputMin.current.value :"00"}</span>
+<span>{inputSec.current!==null?inputSec.current.value :"00"}</span>
 
     </div>
     :  <div>
