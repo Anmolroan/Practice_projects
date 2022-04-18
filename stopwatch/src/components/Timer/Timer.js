@@ -52,21 +52,21 @@ setValue3((s)=>{
     <div>
     
     {
-      set ?  <div>
+      set ?  <div style={{marginTop:"40px"}}>
      
       
-<span>{value}</span>
-<span>{value2}</span>
-<span>{value3}</span>
+<span>{value} h</span>
+<span>{value2} m</span>
+<span>{value3} s</span>
 
     </div>
-    :  <div style={{borderBottom : '4px solid blue', width:"252px",margin:"auto"}}>
+    :  <div style={{borderBottom : '4px solid blue', width:"252px",margin:"auto",marginBottom : '20px'}}>
       <input ref={inputHour}   onChange={(e)=>{
-        setValue(e.target.value)}} type="Number" placeholder ="00 h"/>
+        setValue(e.target.value)}} type="Number" placeholder ="00 "/>
       <input ref={inputMin}   onChange={(e)=>{
         setValue2(e.target.value);
        console.log(inputSec.current.value)
-        }}  type="Number" placeholder ="00 m"/>
+        }}  type="Number" placeholder ="00 "/>
       <input ref={inputSec}  onChange={(e)=>{setValue3(e.target.value)}} type="Number" placeholder ="00 s"/>
     </div>
     }
