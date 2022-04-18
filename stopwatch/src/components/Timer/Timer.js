@@ -17,7 +17,29 @@ function Timer() {
 useEffect(()=>{
 if(flag){
    const interval=setInterval(()=>{
-
+setValue3((s)=>{
+  if(s>0){
+    return s-1
+  }else if(s===0){
+    setValue2((m)=>{
+      if(m>0){
+        setValue3(60);
+        return m-1;
+      }else if(m===0){
+        setValue((h)=>{
+          if(h>0){
+            setValue2(60);
+            return h-1;
+          }else if(h===0){
+            return 0
+          }
+        })
+        return 0;
+      }
+    })
+    return 0;
+  }
+})
  
   },1000)
   return ()=>{
@@ -25,6 +47,7 @@ if(flag){
   }
 }
 },[flag])
+
   return (
    
     <div>
@@ -39,8 +62,12 @@ if(flag){
 
     </div>
     :  <div>
-      <input ref={inputHour}   onChange={(e)=>{setValue(e.target.value)}} type="Number"/>
-      <input ref={inputMin}   onChange={(e)=>{setValue2(e.target.value)}}  type="Number"/>
+      <input ref={inputHour}   onChange={(e)=>{
+        setValue(e.target.value)}} type="Number"/>
+      <input ref={inputMin}   onChange={(e)=>{
+        setValue2(e.target.value);
+       console.log(inputSec.current.value)
+        }}  type="Number"/>
       <input ref={inputSec}  onChange={(e)=>{setValue3(e.target.value)}} type="Number"/>
     </div>
     }
