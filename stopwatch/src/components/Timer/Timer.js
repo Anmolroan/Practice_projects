@@ -2,9 +2,7 @@ import React from 'react'
 import {useState,useRef,useEffect} from 'react'
 import Time from './Timer.styles';
 function Timer() {
-    // const [minute,setMinutes]= useState(0);
-    // const [seconds,setSeconds]= useState(0);
-    // const [hour,setHour]=useState(0);
+ 
     const [value,setValue]= useState(0)
     const [value2,setValue2]= useState(0)
     const [value3,setValue3]= useState(0)
@@ -49,6 +47,7 @@ setValue3((s)=>{
 },[flag])
 
   return (
+    <Time>
    
     <div>
     
@@ -61,14 +60,14 @@ setValue3((s)=>{
 <span>{value3}</span>
 
     </div>
-    :  <div>
+    :  <div style={{borderBottom : '4px solid blue', width:"252px",margin:"auto"}}>
       <input ref={inputHour}   onChange={(e)=>{
-        setValue(e.target.value)}} type="Number"/>
+        setValue(e.target.value)}} type="Number" placeholder ="00 h"/>
       <input ref={inputMin}   onChange={(e)=>{
         setValue2(e.target.value);
        console.log(inputSec.current.value)
-        }}  type="Number"/>
-      <input ref={inputSec}  onChange={(e)=>{setValue3(e.target.value)}} type="Number"/>
+        }}  type="Number" placeholder ="00 m"/>
+      <input ref={inputSec}  onChange={(e)=>{setValue3(e.target.value)}} type="Number" placeholder ="00 s"/>
     </div>
     }
     
@@ -94,6 +93,7 @@ setValue3((s)=>{
    
     
     </div>
+    </Time>
   
   )
 }
