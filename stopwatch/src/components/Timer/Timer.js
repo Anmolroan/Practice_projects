@@ -12,6 +12,7 @@ function Timer() {
     const inputMin =useRef(null);
     const inputHour =useRef(null);
     const [flag,setFlag]=useState(false);
+   
 useEffect(()=>{
 if(flag){
    const interval=setInterval(()=>{
@@ -67,7 +68,12 @@ setValue3((s)=>{
         setValue2(e.target.value);
        console.log(inputSec.current.value)
         }}  type="Number" placeholder ="00 "/>
-      <input ref={inputSec}  onChange={(e)=>{setValue3(e.target.value)}} type="Number" placeholder ="00 s"/>
+      <input ref={inputSec}  onChange={(e)=>{
+       
+          setValue3(e.target.value)
+        
+   ;
+        }} type="Number" placeholder ="00 s"/>
     </div>
     }
     
@@ -87,6 +93,7 @@ setValue3((s)=>{
     
 <button  onClick ={()=>{
   reSet(false)
+ 
  
   }}>Reset</button>
    
