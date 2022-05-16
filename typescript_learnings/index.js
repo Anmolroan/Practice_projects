@@ -1,15 +1,22 @@
-console.log("hello");
-var myname = "Anmol";
-var age = 21;
-var flag = false;
-// const arr =[1,2];
-// const arr2 =[...arr,3];
-function add(x, y) {
-    return x + y;
-}
-var output = add(1, 2);
-var obj = {
-    username: "masia",
-    age: 21,
-    isMarried: true
+console.log("TypeScript");
+var mYname = "Anmol";
+var mYage = 12;
+var masai = {
+    username: "anmol",
+    // age:12,
+    isMarried: true,
+    animal: {
+        hasLegs: true,
+        veg: false
+    }
 };
+var Dog = {
+    name: "tommy",
+    age: 3
+};
+// const myDog:Dog={
+//     food:"pedigree"
+// }
+// const mydog2: Dog | Animal={
+//     food:"pedigree"
+// }
