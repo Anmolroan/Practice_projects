@@ -20,3 +20,5 @@ var Dog = {
 // const mydog2: Dog | Animal={
 //     food:"pedigree"
 // }
+// const myPets :number[]=[1,2,3,4];
+var myPets = [{ name: "pedigree" }, { name: "pedigree" }, { name: "pedigree" }];

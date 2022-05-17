@@ -72,7 +72,7 @@ const masai: User ={
 //   ? means optional
 interface Pet {
     name:string;
-    age:number;
+    age?:number;
 }
 interface Animal {
     noOfLegs:number;
@@ -91,3 +91,5 @@ interface Dog extends Animal{
 // const mydog2: Dog | Animal={
 //     food:"pedigree"
 // }
+// const myPets :number[]=[1,2,3,4];
+const myPets:Pet[]=[{name:"pedigree"},{name:"pedigree"},{name:"pedigree"}]
