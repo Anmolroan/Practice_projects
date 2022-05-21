@@ -9,11 +9,21 @@ function App() {
     first:"Bruce",
     last:"Smith"
   }
+  const nameList =[{
+    first:"Bruce",
+    last:"Smith"
+  },{
+    first:"Bruce",
+    last:"S"
+  },{
+    first:"Bruce",
+    last:"Sm"
+  }]
   return (
     <div className="App">
     <Greet name="anmol" msg={10} isLoggedIn={true} />
     <Person name={personName}/>
-    <PersonList/>
+    <PersonList names={nameList}/>
     </div>
   );
 }

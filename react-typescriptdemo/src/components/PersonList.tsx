@@ -1,11 +1,14 @@
 import React from 'react'
-
-function PersonList() {
+type PersonListProps ={
+    names:{
+        first:string;
+        last:string;
+    }[]
+}
+function PersonList(props:PersonListProps) {
   return (
     <div>
-        <h2>a</h2>
-        <h2>b</h2>
-        <h2>c</h2>
+       {props.names.map((name) => { return <h2>{name.first}+{name.last}</h2>})}
     </div>
   )
 }
