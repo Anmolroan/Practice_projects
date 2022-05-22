@@ -10,6 +10,7 @@ import Oscar from './components/Oscar';
 import Button from './components/Button'
 import Input from './components/Input';
 import Container from './components/Container';
+import User from './components/User';
 function App() {
   const  personName ={
     first:"Bruce",
@@ -36,7 +37,8 @@ function App() {
       console.log("Anmol" ,event,id)
     }}/> */}
     {/* <Input value='' handleChange={(event)=>console.log(event)}/> */}
-    <Container styles={{border: '1px solid'}}/>
+    {/* <Container styles={{border: '1px solid'}}/> */}
+    <User/>
     </div>
   );
 }
