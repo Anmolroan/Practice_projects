@@ -1,14 +1,18 @@
 import { useState } from 'react'
 
 import './App.css'
+import Cart from './components/Cart'
+
 import Todo from './components/Todo'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  // const [count, setCount] = useState(0);
+  
   return (
     <div className="App">
-   <Todo/>
+   {/* <Todo/> */}
+{/* <Counter/> */}
+<Cart/>
     </div>
   )
 }
