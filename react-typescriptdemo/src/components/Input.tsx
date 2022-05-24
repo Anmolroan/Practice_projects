@@ -6,7 +6,7 @@ type InputProps ={
 export default function Input(props:InputProps) {
   return (
     <div>
-        <input type="text" value={props.value} onChange={props.handleChange}/>
+        <input value={props.value} onChange={props.handleChange}/>
     </div>
   )
 }
