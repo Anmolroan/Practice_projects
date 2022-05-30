@@ -7,14 +7,14 @@ function WithArr() {
     const handleSubmit = (e) => {
         e.preventDefault();
         setArr([...arr,text]);
-      
+        setText("")
     }
     const handleChange =(e)=>{
         setText(e.target.value)
     }
   return (
     <div>
-    <form onSubmit={()=>handleSubmit}>
+    <form onSubmit={handleSubmit}>
     <input type="text" onChange={handleChange} value={text}/>
     <input type ="submit" />
     </form>
