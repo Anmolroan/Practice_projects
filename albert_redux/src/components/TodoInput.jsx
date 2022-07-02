@@ -1,6 +1,6 @@
 import React from 'react'
 import {useDispatch} from 'react-redux';
-import {addTodo} from "../redux/action"
+import {addTodo} from "../features/Todo/action"
 function TodoInput() {
     const [title,setTitle]=React.useState("");
     const dispatch=useDispatch();
