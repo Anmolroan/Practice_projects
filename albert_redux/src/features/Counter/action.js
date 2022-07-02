@@ -1,4 +1,5 @@
 import {INC_COUNT,DEC_COUNT} from './actiontypes';
+import {axios} from 'axios'
 export const incCount =(count) =>{
     return {
         type:INC_COUNT,
