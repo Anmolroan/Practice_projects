@@ -6,6 +6,7 @@ import CounterOne from './components/useReducer/CounterOne'
 import CounterTwo from './components/useReducer/CounterTwo'
 import UseReducer from './components/useReducer/UseReducer'
 import AddIcecreams from './components/useReducer/AddIcecreams'
+import Main from './components/useCallback/Main'
 // import HookCounterone from './components/useEffect/HookCounterone'
 // import WithObject from './components/WithObject'
 // import WithArr from './components/usestate/WithArr'
@@ -21,8 +22,9 @@ function App() {
    {/* <HookMouse/> */}
    {/* <CounterOne/>
    <CounterTwo/> */}
-   <UseReducer/>
-   <AddIcecreams/>
+   {/* <UseReducer/>
+   <AddIcecreams/> */}
+   <Main/>
     </div>
   )
 }
