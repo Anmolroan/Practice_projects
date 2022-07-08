@@ -3,10 +3,11 @@ import './App.css';
 import MobileManfacturer from "./component/MobileManfacturer";
 import MobileOperating from "./component/MobileOperating";
 import Button from "./component/Button";
+import Form from './component/Form';
 function App() {
   return (
     <div className="App">
-    <MobileOperating/>
+    {/* <MobileOperating/>
      <MobileManfacturer/>
      <Button color="#4700D8" name="JOIN US" />
      <Button color="#F900BF" name="SETTINGS" />
@@ -15,7 +16,8 @@ function App() {
      <Button color="#FAFFAF" name="SEARCH" />
      <Button color="#333C83" name="HELP" />
      <Button color="#F24A72" name="HOME" />
-     <Button color="#EAEA7F" name="DOWNLOAD" />
+     <Button color="#EAEA7F" name="DOWNLOAD" /> */}
+     <Form/>
 
     </div>
   );
